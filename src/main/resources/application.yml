@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: bjfu123456
+    url: jdbc:mysql://gz-cdb-82gz5qqt.sql.tencentcdb.com:63990/database
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    suffix: .html
+  servlet:
+    multipart:
+        max-file-size: 20MB
+        max-request-size: 100MB
+
+  mvc:
+    static-path-pattern: /static/**
+
+  mail:
+    host: smtp.exmail.qq.com
+    username: linyiying@bjfu.edu.cn
+    password: 13539627858aA
+    port: 465
+    protocol: smtps
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.entity
+
