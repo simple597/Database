@@ -21,25 +21,9 @@ spring:
   mvc:
     static-path-pattern: /static/**
 
-  mail:
-    host: smtp.exmail.qq.com
-    username: linyiying@bjfu.edu.cn
-    password: 13539627858aA
-    port: 465
-    protocol: smtps
-    default-encoding: UTF-8
-    properties:
-      mail:
-        smtp:
-          ssl:
-            enable: true
-          auth: true
-          starttls:
-            enable: true
-            required: true
 
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.example.entity
+  type-aliases-package: com.example.database.entity
 
