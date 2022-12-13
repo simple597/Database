@@ -8,6 +8,7 @@ public class DatabaseApplication {
 
     public static void main(String[] args) {
         System.out.println("史东升_pull_test");
+        System.out.println("陈前中_pull_test");
         SpringApplication.run(DatabaseApplication.class, args);
     }
 
